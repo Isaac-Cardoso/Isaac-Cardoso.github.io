@@ -2,3 +2,35 @@
 @media(max-width:850px){.shell{width:calc(100% - 48px)}.topbar{padding-inline:24px}.topbar nav{gap:19px;margin-left:0}.hero{min-height:auto;padding-top:40px;grid-template-columns:1fr .8fr}.hero h1{font-size:clamp(45px,8vw,65px)}.hero-art{transform:scale(.85);margin-inline:-40px}.proof-inner{grid-template-columns:repeat(4,1fr);padding-block:20px;gap:14px}.proof-label{grid-column:1/-1}.proof-stat{padding-left:12px;gap:7px}.proof-stat strong{font-size:25px}.proof-stat>span{font-size:8px}.expertise-layout,.about-section{gap:40px}.about-mark{width:220px;height:220px}.resume-layout{gap:38px}.pdf-frame object{height:440px}}
 @media(max-width:600px){.shell{width:calc(100% - 40px)}.topbar{height:64px;padding-inline:20px}.topbar nav{display:none}.contact-pill{padding:9px 12px}.hero{display:block;padding-top:34px;padding-bottom:59px}.hero-copy{padding:25px 0 0}.eyebrow{font-size:8px;letter-spacing:1.2px}.hero h1{font-size:51px;letter-spacing:-3px}.hero-intro{font-size:14px}.hero-actions{gap:17px}.button{gap:15px;padding:14px}.text-link{font-size:9px}.hero-meta{margin-top:28px;font-size:7px}.hero-art{height:345px;transform:scale(.82);margin:-2px -28px -24px}.node-a{top:31px}.art-index{bottom:23px}.art-caption{bottom:22px}.label-top{top:7px}.hero-bottom-rule{height:40px}.proof-inner{grid-template-columns:1fr 1fr;gap:20px;padding-block:22px}.proof-label{grid-column:1/-1}.proof-stat{padding-left:12px}.section{padding-block:78px}.section-heading{display:block;margin-bottom:30px}.section-heading h2,.about-copy h2,.resume-copy h2{font-size:43px;letter-spacing:-2.5px}.heading-note{font-size:11px;margin-top:20px}.experience-top{padding:20px;align-items:start}.company-lockup{font-size:13px}.role-label{margin-left:0;font-size:9px}.date-stamp{font-size:7px}.experience-body{padding:28px 19px}.experience-lead{gap:12px}.experience-lead h3{font-size:21px}.work-grid{grid-template-columns:1fr}.work-item{min-height:0;padding:18px}.work-item p{font-size:10px}.experience-foot{padding-inline:18px;font-size:7px}.expertise-section{padding:75px 0}.expertise-layout,.about-section{grid-template-columns:1fr}.expertise-intro h2{font-size:45px}.expertise-intro>p:last-child{max-width:360px}.expertise-list{padding-top:15px}.expertise-list article{grid-template-columns:28px 1fr 18px}.expertise-list h3{font-size:15px}.expertise-list p{font-size:9px;line-height:1.6}.about-section{padding-block:78px;gap:40px}.about-mark{width:190px;height:190px}.about-copy h2{font-size:39px}.credential-row{grid-template-columns:1fr;gap:14px}.resume-section{padding:75px 0}.resume-layout{grid-template-columns:1fr;gap:35px}.resume-copy>p:not(.eyebrow){max-width:360px}.pdf-frame object{height:390px}.contact-section{padding-top:75px;padding-bottom:60px}.contact-main h2{font-size:52px}.contact-circle{width:57px;height:57px;font-size:20px}.contact-details{flex-wrap:wrap;gap:13px 20px;font-size:8px}.footer-inner{height:63px}.footer-inner>span,.footer-inner>a:last-child{font-size:6px;letter-spacing:.5px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Readability improvements kept separate from the artwork and section color treatments. */
+body{font-size:16px}
+.topbar nav a,.contact-pill{font-size:13px;color:#d0d8cf}
+.hero-intro{font-size:17px;color:#c1cbc1}
+.text-link{font-size:12px}
+.hero-meta{font-size:10px;color:#a0aba1}
+.proof-label{font-size:9px;color:#9aa69a}
+.proof-stat>span{font-size:11px;color:#aab5aa}
+.heading-note,.about-text,.resume-copy>p:not(.eyebrow){font-size:14px;color:#b1bcb2}
+.role-label{font-size:12px;color:#aab5aa}
+.work-item h4{font-size:16px}
+.work-item p{font-size:13px;line-height:1.75;color:#b2beb3}
+.expertise-intro>p:last-child{font-size:14px;line-height:1.8;color:#34452e}
+.expertise-list p{font-size:12px}
+.credential-row>div{font-size:10px}
+.contact-details{gap:28px;font-size:13px;color:#c0cbc0}
+.contact-details a{border-bottom:1px solid #607060;padding-bottom:3px;transition:color .2s,border-color .2s}
+.contact-details a:hover{border-color:var(--green)}
+.hero-art .art-caption{width:142px;right:0;bottom:48px;font-size:10px;line-height:1.55}
+@media(max-width:600px){
+  .hero-intro{font-size:15px}
+  .text-link{font-size:10px}
+  .hero-meta{display:grid;grid-template-columns:1fr;justify-items:start;gap:8px;font-size:9px;line-height:1.5}
+  .hero-meta .meta-sep{display:none}
+  .hero-art .art-caption{right:0;bottom:39px;width:132px}
+  .work-item p{font-size:12px}
+  .heading-note,.about-text,.resume-copy>p:not(.eyebrow){font-size:13px}
+  .expertise-intro>p:last-child{font-size:13px;color:#34452e}
+  .expertise-list p{font-size:11px}
+  .contact-details{font-size:12px;gap:15px 20px}
+}

@@ -59,4 +59,9 @@ body{font-size:16px}
 .credential-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
 .credential-list li{position:relative;padding-left:14px;font-size:13px;line-height:1.55;color:#c0cbc0}
 .credential-list li:before{content:"";position:absolute;left:0;top:.58em;width:5px;height:5px;border-radius:50%;background:var(--green)}
-@media(max-width:600px){.credential-groups{grid-template-columns:1fr;gap:10px;margin-top:24px}.credential-group{padding:16px 17px}.credential-list li{font-size:13px}}
+@media(max-width:600px){.credential-groups{grid-template-columns:1fr;gap:10px;margin-top:24px}.credential-group{padding:16px 17px}.credential-list li{font-size:13px}}.header-social{display:flex;align-items:center;gap:16px}
+.header-social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;color:#c0c7bf;border-radius:50%;transition:color .2s ease,background .2s ease}
+.header-social a:hover{color:var(--green);background:#b7f07a12}
+.header-social a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.header-social svg{display:block;width:26px;height:26px;fill:currentColor}
+@media(max-width:600px){.header-social{gap:12px}.header-social a{width:36px;height:36px}.header-social svg{width:25px;height:25px}}
